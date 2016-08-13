@@ -113,6 +113,19 @@
             font-size: 16px;
             line-height: 26px;
           }
+          dl {
+            text-align: left;
+            margin: 0 0 20px;
+            padding: 0;
+            width: 30%;
+          }
+          dd, dt {
+            display: inline;
+            margin: 0;
+          }
+          dd {
+            float: right;
+          }
           .slides {
             width: 100%;
             display: flex;
@@ -155,6 +168,12 @@
             .main h1, .main a {
               width: 100%;
             }
+            dl {
+              width: 50%;
+            }
+            .hero {
+              padding: 0 50px;
+            }
           }
           @media (max-width: 400px) {
             .main-bg {
@@ -179,10 +198,10 @@
             .hero {
               height: auto;
               background: #1b516c;
-              padding: 40px;
+              padding: 40px 30px;
             }
-            .hero p {
-              font-size: ;
+            dl {
+              width: 100%;
             }
             .slides {
               flex-direction: column;
@@ -221,7 +240,15 @@
         </div>
         <div class="hero">
           <h2>About us</h2>
-          <p>Glacier Point Band is Brenda Aguilar, Eddie Wu, Dan Hall, and Anthony DLC based out of San Francisco, CA—<br>
+          <p>Glacier Point Band is—</p>
+            <!-- <div> -->
+              <dl>
+                <dt>Brenda Aguilar</dt> <dd>Vocals, ukulele</dd><br>
+                <dt>Eddie Wu</dt> <dd>Acoustic guitar</dd><br>
+                <dt>Anthony DLC</dt> <dd>Acoustic guitar, bass</dd><br>
+                <dt>Dan Hall</dt> <dd>Percussion</dd><br>
+              </dl>
+            <!-- </div> -->
 Four friends having fun and putting their own twist on different genres and decades of music.</p>
         </div>
         <div class="slides">
